@@ -75,6 +75,7 @@ if args.mode == 'obj1':
                         --pred_seg_dir %s' % (args.obj1_config_file, args.obj1_checkpoint_file, video_image_dir, video_obj1_dir)
 
     print('Predicting 1st order interacting objects......')
+    print(args.obj1_config_file, args.obj1_checkpoint_file)
     print(cmd_pred_obj1)
     os.system(cmd_pred_obj1)
 elif args.mode == 'obj2':
